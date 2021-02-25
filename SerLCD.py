@@ -12,6 +12,8 @@ spi = busio.SPI(board.SCK, board.MOSI, board.MISO)
 cs = digitalio.DigitalInOut(board.CE0)
 cs.direction = digitalio.Direction.OUTPUT
 
+#Create an object for the SerLCD
+#As you can see below serlcd has many commands to work with the SerLCD module
 serlcd = Sparkfun_SerLCD_SPI(spi, cs)
 
 #Initalization Done
